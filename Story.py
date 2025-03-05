@@ -4,7 +4,7 @@ import os
 from fpdf import FPDF
 
 # Configure Gemini API
-API_KEY = st.secrets["API_KEY"]
+API_KEY = st.secrets["Gen_API"]
 genai.configure(api_key=API_KEY)
 
 st.title("📖 AI Story Writer")
