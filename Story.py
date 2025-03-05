@@ -22,7 +22,7 @@ selected_style = st.selectbox("Choose a writing style:", styles)
 story_prompt = st.text_area("Enter your story prompt:", "Once upon a time...")
 
 def generate_story(prompt, genre, style):
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     full_prompt = f"Write a {genre} story in a {style} style: {prompt}"
     response = model.generate_content(full_prompt)
     return response.text
